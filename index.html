@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodExpress</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <div class="col-sm-10">
-                <div class="form-group">
-                    <label for="name">Nama :</label>
-                    <input type="text" class="form-control" placeholder="Name" name="nama" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" class="form-control" placeholder="Email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password :</label>
-                    <input type="password" class="form-control" placeholder="Password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="jk">Jenis Kelamin :</label>
-                    <select class="form-control" id="jk">
-                        <option>Pria</option>
-                        <option>Wanita</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+  <header class="navbar">
+    <div class="logo">FoodExpress</div>
+    <a href="login.html" class="login-button">Login</a>
+  </header>
+
+  <main class="restaurant-list">
+    <h2>Daftar Restoran</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="resto1.jpg" alt="Restoran A">
+        <h3>Padang</h3>
+        <p>Masakan Indonesia</p>
+      </div>
+      <div class="card">
+        <img src="resto2.jpg" alt="Restoran B">
+        <h3>Mie Ayam om mue</h3>
+        <p>Aneka Ayam & Bebek</p>
+      </div>
+      <div class="card">
+        <img src="resto3.jpg" alt="Restoran C">
+        <h3>Ramen Nime</h3>
+        <p>Makanan Jepang</p>
+      </div>
+      <div class="card">
+        <img src="resto4.jpg" alt="Restoran D">
+        <h3>Jajangmyeon Manado</h3>
+        <p>Masakan Korea</p>
+      </div>
+      <div class="card">
+        <img src="resto5.jpg" alt="Restoran E">
+        <h3>Burger kawangkoan</h3>
+        <p>Western Food</p>
+      </div>
+      <div class="card">
+        <img src="resto6.jpg" alt="Restoran F">
+        <h3>Sweets by Ngel</h3>
+        <p>Camilan & Dessert</p>
+      </div>
     </div>
-
-    <footer class="text-light text-center py-4 mt-5" style="background-color: darkblue;">
-        <div class="container">
-            <p class="mb-0"><strong>ALESSANDRO EZRA MARVEL RUMANGKANG</strong> | <strong>220211060191</strong></p>
-        </div>
-    </footer>
-    
-
+  </main>
 </body>
 </html>

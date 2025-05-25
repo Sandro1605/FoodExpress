@@ -9,23 +9,16 @@
 <body>
   <div class="login-container">
     <h2>Login ke FoodExpress</h2>
-    <form action="#" method="post" class="login-form">
-      <label for="role">Masuk sebagai:</label>
-      <select id="role" name="role" required>
-        <option value="">-- Pilih Role --</option>
-        <option value="customer">Customer</option>
-        <option value="admin">Admin</option>
-        <option value="owner">Owner</option>
-      </select>
-
+    <form action="login.php" method="POST" class="login-form">
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required />
+      <input type="text" name="username" id="username" required />
 
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required />
+      <input type="password" name="password" id="password" required />
 
       <button type="submit">Login</button>
     </form>
   </div>
 </body>
 </html>
+

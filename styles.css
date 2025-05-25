@@ -1,158 +1,3 @@
-<<<<<<< HEAD
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #ff6347;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.login-button {
-  background-color: white;
-  color: #ff6347;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #ffe0db;
-}
-
-/* Daftar restoran */
-.restaurant-list {
-  padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-}
-
-.restaurant-list h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  color: #333;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Hanya 3 kolom per baris */
-  gap: 1.5rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 1rem 1rem 0.5rem;
-  font-size: 1.2rem;
-  color: #222;
-}
-
-.card p {
-  padding: 0 1rem 1rem;
-  color: #666;
-  font-size: 0.95rem;
-}
-
-/* Responsive: 1 kolom di mobile, 2 di tablet */
-@media (max-width: 900px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* Login */
-.login-container {
-  max-width: 400px;
-  margin: 5rem auto;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #ff6347;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.login-form label {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.login-form input,
-.login-form select {
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.login-form button {
-  padding: 0.75rem;
-  background-color: #ff6347;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.login-form button:hover {
-  background-color: #e0523d;
-}
-
-=======
 /* Reset dasar */
 * {
   margin: 0;
@@ -403,6 +248,21 @@
   background-color: #4cae4c;
 }
 
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffdddd;
+  color: #d8000c;
+  padding: 1rem 2rem;
+  border: 1px solid #d8000c;
+  border-radius: 8px;
+  z-index: 999;
+  display: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  text-align: center;
+}
 
->>>>>>> 1872d6d (added new file)
   

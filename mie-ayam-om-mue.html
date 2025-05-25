@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mie Ayam Om Mue - FoodExpress</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mie Ayam Om Mue</h1>
+    <div class="info">
+      <p><strong>📍 Lokasi:</strong> Jl. Teling Atas No.10, Manado</p>
+      <p><strong>🕒 Jam Operasional:</strong> 08.00 - 16.00</p>
+    </div>
+
+    <h2>Menu dan Harga</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <div><strong>Mie Ayam Original</strong><br/>Rp 18.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Mie Ayam Original', 18000)">Add</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div><strong>Mie Ayam Bakso</strong><br/>Rp 22.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Mie Ayam Bakso', 22000)">Add</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div><strong>Es Teh Manis</strong><br/>Rp 5.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Es Teh Manis', 5000)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <h2>🛒 Keranjang</h2>
+    <ul id="cartList" class="cart-list"></ul>
+    <p><strong>Total:</strong> Rp <span id="cartTotal">0</span></p>
+    <button id="checkoutBtn" onclick="checkout()">Pesan Sekarang</button>
+    <div id="alertBox" class="alert">Harap Login sebagai Customer untuk memesan.</div>
+  </div>
+
+  <script src="restaurant.js"></script>
+</body>
+</html>

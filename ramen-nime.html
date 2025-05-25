@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramen Nime - FoodExpress</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ramen Nime</h1>
+    <div class="info">
+      <p><strong>📍 Lokasi:</strong> Jl. Tikala Ares No.12, Manado</p>
+      <p><strong>🕒 Jam Operasional:</strong> 11.00 - 22.00</p>
+    </div>
+
+    <h2>Menu dan Harga</h2>
+    <div class="menu">
+      <div class="menu-item">
+        <div><strong>Shoyu Ramen</strong><br/>Rp 38.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Shoyu Ramen', 38000)">Add</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div><strong>Tonkotsu Ramen</strong><br/>Rp 42.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Tonkotsu Ramen', 42000)">Add</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div><strong>Ramen Pedas Nime</strong><br/>Rp 40.000</div>
+        <div class="menu-actions">
+          <button class="add-btn" onclick="addToCart('Ramen Pedas Nime', 40000)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <h2>🛒 Keranjang</h2>
+    <ul id="cartList" class="cart-list"></ul>
+    <p><strong>Total:</strong> Rp <span id="cartTotal">0</span></p>
+    <button id="checkoutBtn" onclick="checkout()">Pesan Sekarang</button>
+    <div id="alertBox" class="alert">Harap Login sebagai Customer untuk memesan.</div>
+  </div>
+  <script src="restaurant.js"></script>
+</body>
+</html>
